@@ -7,7 +7,7 @@ RUN cd ~; \
 	apt-get update; \
 	apt-get install -y --no-install-recommends apt-utils; \
 	apt-get install -y --no-install-recommends mc less nano wget pv zip unzip supervisor net-tools iputils-ping sudo curl gnupg nginx git ca-certificates python3-pip python3-venv; \
-	apt-get install -y --no-install-recommends php7.4 php7.4-fpm php7.4-json php7.4-curl php7.4-xml php7.4-xmlrpc php7.4-mysql php7.4-sqlite3 php7.4-pgsql php7.4-opcache php7.4-mbstring php7.4-soap php7.4-intl; \
+	apt-get install -y --no-install-recommends php7.4 php7.4-fpm php7.4-json php7.4-curl php7.4-xml php7.4-xmlrpc php7.4-mysql php7.4-sqlite3 php7.4-pgsql php7.4-opcache php7.4-mbstring php7.4-soap php7.4-intl php7.4-tidy; \
 	echo 'Ok'
 	
 RUN cd ~; \
