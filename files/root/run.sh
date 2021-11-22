@@ -2,6 +2,10 @@
 
 export EDITOR=nano
 
+
+# Setup
+echo "Setup container"
+
 # Run scripts
 if [ -d /root/run.d ]; then
   for i in /root/run.d/*.sh; do
@@ -11,6 +15,10 @@ if [ -d /root/run.d ]; then
   done
   unset i
 fi
+
+
+# Start
+echo "Start container"
 
 # Run supervisor
 trap 'kill -TERM $PID; wait $PID' SIGHUP SIGINT SIGQUIT SIGTERM

@@ -54,6 +54,7 @@ RUN cd ~; \
 	cp -rf /src/files/usr/* /usr/; \
 	cp -rf /src/files/var/* /var/; \
 	rm -rf /src/*; \
+	rm -rf /etc/nginx/sites-enabled/default; \
 	chmod +x /root/run.sh; \
 	echo 'Ok'
 
