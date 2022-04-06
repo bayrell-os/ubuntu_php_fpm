@@ -1,7 +1,6 @@
 ARG ARCH=
 FROM ${ARCH}ubuntu:focal
 
-ADD files/etc/apt/sources.list /etc/apt/sources.list
 RUN cd ~; \
 	export DEBIAN_FRONTEND='noninteractive'; \
 	apt-get update; \
